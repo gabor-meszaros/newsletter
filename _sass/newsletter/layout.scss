@@ -1,0 +1,40 @@
+/* Header */
+#header {
+
+  @include media-breakpoint-up(lg) {
+    margin-top: $layout-horizontal-spacing;
+  }
+
+  .navbar {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .navbar-brand {
+    margin-right: 0px;
+  }
+
+  .navbar-toggler-right {
+   right: 0px;
+  }
+
+}
+
+/* Main Content */
+#content {
+
+  @include media-breakpoint-up(lg) {
+    margin-top: $layout-horizontal-spacing;
+  }
+
+}
+
+/* Footer */
+#footer {
+
+  @include media-breakpoint-up(lg) {
+    margin-top: $layout-horizontal-spacing;
+  }
+
+}
+
