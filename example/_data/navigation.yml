@@ -4,6 +4,8 @@
 main:
   - title: "Home"
     href: /
+  - title: "Posts"
+    href: /posts/
   - title: "Documentation"
     href: https://github.com/gabor-meszaros/newsletter
   - title: "About"

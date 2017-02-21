@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<div class="row">
+  <div class="col-lg-6">
+    {% if page.lead %}
+    <h1>{{ page.lead }}</h1>
+    {% endif %}
+  </div>
+  <div class="col-lg-6">
+    {% if page.sidebar %}
+    <p>{{ page.sidebar }}</p>
+    {% endif %}
+  </div>
+</div>
+
+{% if content %}
+<div id="lead-content">
+  {{ content }}
+</div>
+{% endif %}

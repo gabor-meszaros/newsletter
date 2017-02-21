@@ -29,6 +29,14 @@
 
 }
 
+#lead-content {
+
+  @include media-breakpoint-up(lg) {
+    margin-top: $layout-horizontal-spacing;
+  }
+
+}
+
 /* Footer */
 #footer {
 
