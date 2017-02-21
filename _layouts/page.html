@@ -1,12 +1,23 @@
 ---
 layout: default
 ---
-<article>
+<div class="row justify-content-between">
+  <div class="col-xl-7 col-lg-7">
 
-  <header>
-    <h1>{{ page.title | escape }}</h1>
-  </header>
+    <article>
 
-  {{ content }}
+      <header>
+        <h1>{{ page.title | escape }}</h1>
+      </header>
 
-</article>
+      {{ content }}
+
+    </article>
+
+  </div>
+  <div class="col-xl-4 col-lg-5">
+    {% if page.sidebar %}
+    <p>{{ page.sidebar }}</p>
+    {% endif %}
+  </div>
+</div>

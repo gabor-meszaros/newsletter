@@ -4,8 +4,10 @@
 main:
   - title: "Home"
     href: /
-  - title: "About"
+  - title: "Documentation"
     href: https://github.com/gabor-meszaros/newsletter
+  - title: "About"
+    href: /about/
   # Example:
   # - title: "Newsletter"
   #   href: /newsletter/
