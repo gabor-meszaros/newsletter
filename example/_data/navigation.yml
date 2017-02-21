@@ -1,0 +1,11 @@
+# Navigation links
+
+# Main links
+main:
+  - title: "Home"
+    href: /
+  - title: "About"
+    href: https://github.com/gabor-meszaros/newsletter
+  # Example:
+  # - title: "Newsletter"
+  #   href: /newsletter/

@@ -1,23 +1,30 @@
 <div id="header" class="container">
 
   <nav class="navbar navbar-light navbar-toggleable-md" style="background-color: transparent; background: transparent; border-color: transparent;">
+
+    {% assign have_navigation_data = site.data.navigation.main %}
+    {% assign need_toggle_button = have_navigation_data %}
+
+    {% if need_toggle_button %}
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+    {% endif %}
+
     <a class="navbar-brand" href="{{ "/" | relative_url}}">{{ site.title | escape }}</a>
+
+    {% if have_navigation_data %}
     <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
       <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
+        {% for link in site.data.navigation.main %}
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="{{ link.href }}" {% if link.href contains '://' %}target="_blank"{% endif %}>{{ link.title }}</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
+        {% endfor %}
       </ul>
     </div>
+    {% endif %}
+
   </nav>
 
 </div>
