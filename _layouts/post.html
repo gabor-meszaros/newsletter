@@ -1,15 +1,26 @@
 ---
 layout: default
 ---
-<article itemscope itemtype="http://schema.org/BlogPosting">
+<div class="row justify-content-between">
+  <div class="col-xl-7 col-lg-7">
 
-  <header>
-    <h1 itemprop="name headline">{{ page.title | escape }}</h1>
-    <p><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-  </header>
+    <article itemscope itemtype="http://schema.org/BlogPosting">
 
-  <div itemprop="articleBody">
-    {{ content }}
+      <header>
+        <h1 itemprop="name headline">{{ page.title | escape }}</h1>
+        <p><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+      </header>
+
+      <div itemprop="articleBody">
+        {{ content }}
+      </div>
+
+    </article>
+
   </div>
-
-</article>
+  <div class="col-xl-4 col-lg-5">
+    {% if page.sidebar %}
+    <p>{{ page.sidebar }}</p>
+    {% endif %}
+  </div>
+</div>
