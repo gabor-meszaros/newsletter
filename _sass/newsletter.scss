@@ -8,5 +8,6 @@
 $layout-horizontal-spacing: 3 * ($font-size-lg);
 
 @import
+  "newsletter/archive",
   "newsletter/layout"
 ;
