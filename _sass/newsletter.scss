@@ -5,7 +5,9 @@
 
 // Define defaults for each variable.
 // e.g.  $small-font-size:  $base-font-size * 0.875 !default;
-$layout-horizontal-spacing: 3 * ($font-size-lg);
+$layout-horizontal-spacing-small:  $font-size-lg;
+$layout-horizontal-spacing-medium: 2 * ($layout-horizontal-spacing-small);
+$layout-horizontal-spacing-large:  3 * ($layout-horizontal-spacing-small);
 
 @import
   "newsletter/archive",

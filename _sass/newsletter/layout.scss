@@ -2,7 +2,7 @@
 #header {
 
   @include media-breakpoint-up(lg) {
-    margin-top: $layout-horizontal-spacing;
+    margin-top: $layout-horizontal-spacing-large;
   }
 
   .navbar {
@@ -23,8 +23,10 @@
 /* Main Content */
 #content {
 
+  margin-top: $layout-horizontal-spacing-small;
+
   @include media-breakpoint-up(lg) {
-    margin-top: $layout-horizontal-spacing;
+    margin-top: $layout-horizontal-spacing-large;
   }
 
 }
@@ -32,7 +34,7 @@
 #lead-content {
 
   @include media-breakpoint-up(lg) {
-    margin-top: $layout-horizontal-spacing;
+    margin-top: $layout-horizontal-spacing-large;
   }
 
 }
@@ -40,8 +42,10 @@
 /* Footer */
 #footer {
 
+  margin-top: $layout-horizontal-spacing-small;
+
   @include media-breakpoint-up(lg) {
-    margin-top: $layout-horizontal-spacing;
+    margin-top: $layout-horizontal-spacing-large;
   }
 
 }
