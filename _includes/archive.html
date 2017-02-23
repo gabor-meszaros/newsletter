@@ -34,7 +34,7 @@
     {% endif %}
 
     <li>
-      <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+      <span class="text-muted">{{ post.date | date: "%b %-d, %Y" }}</span>
       <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
     </li>
 
