@@ -1,3 +1,11 @@
+/* Lead */
+h1.lead {
+  font-size: $font-size-xl;
+  font-weight: $font-weight-bold;
+  margin-bottom: $lead-margin-bottom;
+}
+
+/* Archive */
 .archive-list {
   list-style-type: none;
   margin: 0;
