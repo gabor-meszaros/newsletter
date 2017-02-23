@@ -1,0 +1,50 @@
+{% assign number_of_columns = 4 %}
+{% assign number_of_posts = site.posts | size %}
+{% assign number_of_long_columns = number_of_posts | modulo: number_of_columns %}
+{% assign posts_per_short_column = number_of_posts | divided_by: number_of_columns %}
+{% assign posts_per_long_column = posts_per_short_column | plus: 1 %}
+
+<div class="row">
+  {% assign remaining_posts_of_current_column = 0 %}
+  {% assign remaining_long_columns = number_of_long_columns %}
+
+  {% for post in site.posts %}
+
+    {% if remaining_posts_of_current_column == 0 %}
+      {% assign start_new_column = true %}
+    {% else %}
+      {% assign start_new_column = false %}
+    {% endif %}
+
+    {% if start_new_column %}
+      {% if remaining_long_columns != 0 %}
+        {% assign remaining_posts_of_current_column = posts_per_long_column %}
+        {% assign remaining_long_columns = remaining_long_columns | minus: 1 %}
+      {% else %}
+        {% assign remaining_posts_of_current_column = posts_per_short_column %}
+      {% endif %}
+    {% endif %}
+
+    {% if start_new_column %}
+      {% unless forloop.first %}
+        </ul>
+        </div>
+      {% endunless %}
+      <div class="col">
+      <ul>
+    {% endif %}
+
+    <li>
+      <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+      <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+    </li>
+
+    {% if forloop.last %}
+      </ul>
+      </div>
+    {% endif %}
+
+    {% assign remaining_posts_of_current_column = remaining_posts_of_current_column | minus: 1 %}
+
+  {% endfor %}
+</div>
