@@ -1,7 +1,6 @@
-{% assign number_of_columns = 4 %}
 {% assign number_of_posts = site.posts | size %}
-{% assign number_of_long_columns = number_of_posts | modulo: number_of_columns %}
-{% assign posts_per_short_column = number_of_posts | divided_by: number_of_columns %}
+{% assign number_of_long_columns = number_of_posts | modulo: include.number_of_columns %}
+{% assign posts_per_short_column = number_of_posts | divided_by: include.number_of_columns %}
 {% assign posts_per_long_column = posts_per_short_column | plus: 1 %}
 
 <div class="row">
