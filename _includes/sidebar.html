@@ -1,5 +1,11 @@
 {% if page.sidebar %}
 
-<p>{{ page.sidebar }}</p>
+  {% for section in page.sidebar %}
+
+    {% assign file = section.template | append: '.html' %}
+
+    {% include {{ file }} argument=section.arguments %}
+
+  {% endfor %}
 
 {% endif %}

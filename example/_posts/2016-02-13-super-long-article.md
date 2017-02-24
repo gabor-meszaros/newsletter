@@ -1,7 +1,10 @@
 ---
 layout: post
 title: "Some articles are just so long they deserve a really long title to see if things will break well"
-sidebar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere purus in accumsan ultrices. Quisque quis consequat mi. Praesent ac tristique mauris. Maecenas malesuada viverra lobortis. Nam ut nibh turpis. Phasellus nec ligula eget massa dignissim ultricies ut sed nibh. Sed tincidunt ligula placerat nisl tincidunt, a elementum orci venenatis. Fusce vel posuere felis, bibendum aliquam lorem. Aliquam erat volutpat. Sed mauris nulla, pharetra non nisi ac, sollicitudin ornare metus. Sed egestas augue at malesuada consectetur. Aliquam aliquam, justo eu pellentesque pharetra, urna purus efficitur augue, id tincidunt tellus nunc vel arcu. Curabitur arcu turpis, dictum in urna sed, ornare consectetur nulla."
+sidebar:
+  - template: textbox
+    arguments:
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere purus in accumsan ultrices. Quisque quis consequat mi. Praesent ac tristique mauris. Maecenas malesuada viverra lobortis. Nam ut nibh turpis. Phasellus nec ligula eget massa dignissim ultricies ut sed nibh. Sed tincidunt ligula placerat nisl tincidunt, a elementum orci venenatis. Fusce vel posuere felis, bibendum aliquam lorem. Aliquam erat volutpat. Sed mauris nulla, pharetra non nisi ac, sollicitudin ornare metus. Sed egestas augue at malesuada consectetur. Aliquam aliquam, justo eu pellentesque pharetra, urna purus efficitur augue, id tincidunt tellus nunc vel arcu. Curabitur arcu turpis, dictum in urna sed, ornare consectetur nulla."
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
